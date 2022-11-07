@@ -36,7 +36,8 @@ body {
     cursor: pointer;
 }
 
-.container .heroes .hero:hover {
+.container .heroes .hero:hover,
+.container .heroes .hero:active {
     background-color: #ff9c00;
     transform: skewX(-14deg) scale(1.3);
     z-index: 1;
