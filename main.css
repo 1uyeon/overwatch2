@@ -1,0 +1,94 @@
+
+body {
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/ParkYoungWoong/overwatch-hero-selector-vanilla/master/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container {
+    padding: 50px 0;
+}
+
+.container .heroes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container .heroes .hero {
+    width: 80px;
+    height: 84px;
+    margin: 4px;
+    background-color: #555;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: skewX(-14deg);
+    transition:
+        transform .1s,
+        background-color .6s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .heroes .hero:hover {
+    background-color: #ff9c00;
+    transform: skewX(-14deg) scale(1.3);
+    z-index: 1;
+}
+.container .heroes .hero .image {
+    width: 140%;
+    height: 100%;
+    background-position: center;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    transform: skewX(14deg) translateX(-16px);
+}
+.container .heroes .hero:nth-child(1) .image { background-image: url("https://w.namu.la/s/3ae8077a56d70e043a24ab08316bc5e1d73d1f3e60651e58a2bb43585ca058cef7f11e2e8d96589c42e8431792f9a16481a74d2896df79aa79136ab75521eb805fc4b01b4460ad81e4ec132ce62ec7dcd0cb0a7ff277c81a4701a0e51188b31942628a5cece5a3168ff4842f61fa5f9e"); }
+.container .heroes .hero:nth-child(2) .image { background-image: url("https://w.namu.la/s/f612d7fc9fd988db30d5bf101f50294e9856aca08a688518f8071e87afce1b18272a902d672e1c3a568ab1f40f287e6f51aad729b52d3594b6f0f3faebbca9b28ef3012dd6660bf41d7f86a99e24327a8148f4ce299e97b5e7e0df3fab9276ea8f4fd9e842386fe5f2617a0b2f3aa18e"); }
+.container .heroes .hero:nth-child(3) .image { background-image: url("https://w.namu.la/s/9898639eade0f06a236aca824806bf05ba753e3a43e076f288aacde62172ef833153bf57b9b8c9536e318f379bcd52f51e3e8c6f10c53ec85479f344b410558753eef7db16f0c8c0d974d1ed4baae5bc07ad8a2755d3a298a836ab82c3f1741d9fc725fa0115057ba5c544497e5aca66"); }
+.container .heroes .hero:nth-child(4) .image { background-image: url("https://w.namu.la/s/26b8baf4ea788715cc7d14718f1b24a29104ed42537451ec5fb23ed378ac3d5c80757a1bcc82ed62aa4485cf578a2c3be96783ab335b9276ef5109cbf1fada6c6a442a7bb4b17fe389e303ae62258c8d1254cb77c61921a2991438b0a56fb33e2450ea20ce75c3a91de063c87865016c"); }
+.container .heroes .hero:nth-child(5) .image { background-image: url("https://w.namu.la/s/c76d117996abca213a1b16a10e504abe92837a14be38056bf4a46572e4dd31ee890395618e20e81007e494e3f59807c72e23405f5d3be22c4f9e47b21adfd22c09268fae9b94d5f1332cec6b2688dbe0a4f118ad44736b9897d22db63e380da4ec60d95193c84b0ddd425c237c4b434b"); }
+.container .heroes .hero:nth-child(6) .image { background-image: url("https://w.namu.la/s/d7ca878098b784e1dbc8125137598aa9a9ace6651b4d89f20234e7acdde2225b7e921a680dd83444843c27b9197f097ccc274366fefd3d8fa9d60e33bd278c9d2f4a389525e26b38c7ca565b957b71af1fdf1bf87a355669b28e0aecf61507d911735759b7dad3bd4d84af09f007fa57"); }
+.container .heroes .hero:nth-child(7) .image { background-image: url("https://w.namu.la/s/ca8c5523244e45f544528f19cb40fa8e7f43b7ff332ebd88aec5336fb12254e2e1d0b55a0a3fa0574497984d4c772455be45de73f697398251a40abd89b730b2181e191a9a97fc8a905f964e979738a4d0174e18f9f9932fef256443c7a914ece330cb396377e9711c4eec44f6e6c917"); }
+.container .heroes .hero:nth-child(8) .image { background-image: url("https://w.namu.la/s/e08663158b2bed1858063eb743ec56de82930dbfa30dd29e24c9a7ffdcc32e6d9c087346a2ef264c82fcd27f903a402451d0f0efdc5c1b11d667a5f08614b90ff0a14047df2c6959a1c9252796eb81b229af01a12dc5ac3922cbb2a25d9ba42e07c45205223016b935463dd9c7407e39"); }
+.container .heroes .hero:nth-child(9) .image { background-image: url("https://w.namu.la/s/5f7891b4d4d30738146b372f2d1c15f6ee844920d6678e5eca6cc0c364ed9ba81538393ec5931a6ff5b737f6549018372769fa5a7e4a0ceed07ede6f954a881d137e0fb5b0cfe6d95fb72d5b4104f2dfd7c0ca85df0a113b6c6c83b95c067a9782b32866182440ae6757674663709533"); }
+.container .heroes .hero:nth-child(10) .image { background-image: url("https://w.namu.la/s/23f7f64867b864e10a81825a153bd9ffeff7c0a6aa1770b1e247169d29cf96979ed60dc2700b3d8c8056cfc8672bae245920027766ab3528354e54830c7f9abc77971564779bd485d4116bbcf25cdaad6c0499d70a1e97a0293418c4d280c6186794816f7cd7c3c64628560c9a1af4f5"); }
+.container .heroes .hero:nth-child(11) .image { background-image: url("https://w.namu.la/s/325069ddfc9ec0e29f3f25739e873d33225d323e371c1892dffc96add17a2d0aa654e34041dab9bd2bc9e30c1490103876e344f936d7da55035c880a089bacceb4f25550e28568eba5e0f8ad0302be74ee8fce8ea2ab147c1768f34a408360bd02ebc82aa02c3c4ad7845459fc8d32cd"); }
+.container .heroes .hero:nth-child(12) .image { background-image: url("https://w.namu.la/s/23283357ba77f7c45f24ce7f7f2aa361506601221b351d5730a452899517251b1c96d75147c8a942dae3cfa29d5ddf9f26e1a8afde22fca697e76bbb3d71ae9313c48451a2e955213808ded295187ba57a00422b7b973606e452f8c53ac0a0c865b9343a5f98d9a3ed06d71f2b51c9b0"); }
+.container .heroes .hero:nth-child(13) .image { background-image: url("https://w.namu.la/s/9b98fc6eaf2104a729b052157fc644dc6deb2eaac83a1133b9a8d8476fee0ab6473056188bd395193a1dac96a8459f606377e5b2a1bd1d59c48fee76c759ce05332b5b5519b8a2ee8852b7ac207f72ce9de3f7b1f7b291677de1db93e4b4a102ab47956d8dd904b63d97b40ab1974740"); }
+.container .heroes .hero:nth-child(14) .image { background-image: url("https://w.namu.la/s/a031cfbeeb37a215dabbe67f64a26fd382d7ba12e032738aa06c78bb43edc739f6c1f210d2f34f2d9cd8b894b48820dee81122e530fb5204f1f9fbd0fd9e6ce0b97c76c0c65a2750fbbbf01bfb569a8eee45ea7fc45c622f2a498c89e5d9b37837d91b303a9bfcdcaf85ed7611979225"); }
+.container .heroes .hero:nth-child(15) .image { background-image: url("https://w.namu.la/s/5488040f93740eccb6e3f358f1052bb744b53cecbbd2a0113a0d66f9f3f33848ebc2eb884ae9e0b19fab67cef1d798abb636386ae7c8bbf02ad929325dd0224ac86bbe898f757e424d98a7c04b1f60a1c07a3d9dce11b6802b27b32d09d701badfebeb3e6bd327ed7ea01286668e79ed"); }
+.container .heroes .hero:nth-child(16) .image { background-image: url("https://w.namu.la/s/a696fc92425af3b680c7900cda19fc96d54eb2f9d4a3972a649e5a747fc4f3e4c4d335f41ff92481dab193cf5c5f598a28b64bcea8df2d0378b0cfe447f5816daf9d3e0d1c3043d2e050a51423995c3f4fb338fd8165c673d11fe8d884c5bc5d390a98d7d67fafc1dda2df9f39dc866b"); }
+.container .heroes .hero:nth-child(17) .image { background-image: url("https://w.namu.la/s/ea1ebf5eb2251e50ca0649e10ce501fb51dc471f916f64a2da1d6eda85024dc3e0aafe0929c9eb7fb49a66b47be8107166cd562ec0643bc977266eb17e78dc0c4e0291b856613b5ce2932040cb363e3cab968b87a6f70a049b139f403e4df644f0226eb9a24837cd2901cd3dd22fdde1"); }
+.container .heroes .hero:nth-child(18) .image { background-image: url("https://w.namu.la/s/cb4d268c4531fccb16b2c2d0246d43f5d7de7710e12ede35e547f28edccb220ae4f15bb1fe2c819cdb29731231d805d4a80a954e8965fa397f8fc836cca664370082f7fe85622c6b04759be6a58df17c609084a9ce5e48410c54423c69b346943783e4f2831f9690150cc62d3f60c6aa"); }
+.container .heroes .hero:nth-child(19) .image { background-image: url("https://w.namu.la/s/0c3eeb846a89bb6aa33213029a845eb04d0e2e4cd8424184616dc85d198cb4ebc91a54236c0b6af28ea71071016e74755d3bfbaf82a2d3d9846ed42b35f4f948e83b6b16ab045c702ebedab48d5ede64889854cd7f5e08bdf6150b1ada9f6c23ac4e0cd9b20fc33a5977249e309efef0"); }
+.container .heroes .hero:nth-child(20) .image { background-image: url("https://w.namu.la/s/b96832ca1c89bc3b8c16c3734240f71d155b38affb50aca89b5325c219a028e7952c1d956f5255a0d8757fc68294ab894cdf7ebbd27434c1ddf33f65f159db97087b0df5a0c56e6afa0e1ec8decf02755d57ce379bdb56fc340e25b6b62cd36081919f4e72221779c1ffc4af10c36801"); }
+.container .heroes .hero:nth-child(21) .image { background-image: url("https://w.namu.la/s/e053555670ed1ebf97f0422963cd387754b2d7498e601a27201dbe99336563dafa1c43a6ae6badc59ad6ca6e3bf30de5c32d7e0794578fbeda6b8659fedf03225eed4e8aff7d9d355f876780029ee4fec0eebf39bcf8966c5bf441c43c8fa433738c8b13009e6b7d1f39e2831619e44a"); }
+.container .heroes .hero:nth-child(22) .image { background-image: url("https://w.namu.la/s/c829729b1de64b9b0b5f3f40a5407ebb91691c2c9e41a992e2035447b987329a43aef48f50b1d9ad21b7528862080c5d3f6801328a65b08bfd95cfac27081cd89a4f378889e6dedb5a7dca5731ed67d1b5b0afaca0368e47648f7eed99ada7b2dcf69de9e6b70860c91784679e34c84a"); }
+.container .heroes .hero:nth-child(23) .image { background-image: url("https://w.namu.la/s/c9a00e0884d27551b71f4979657f6b98d1ed91dda8480e6c36691ed8da4830ae3772412ffe0e2ab3054f56fa29445117aafa031b785a3357a304c4d0929607a5990faacfee3852d6834bd494eddafd8ff003859b48d5b474d4510461d7c155ee7e9c38a69cd8d8664e2b293b857a4a34"); }
+.container .heroes .hero:nth-child(24) .image { background-image: url("https://w.namu.la/s/959095cd1f0f954b57697f96ba0921a55e5408c314356855769db4546d03a8dc7fc944f5e872ad22e1a2fbfde4c2a5a241acb0a5e3ef703c3ff54615582916cba4d2212d0edfdaa27a2d9693038596e7b1a1b438e5f6cc7a9631d5b51e854365f68514922518b4e367fa10f637c714e0"); }
+.container .heroes .hero:nth-child(25) .image { background-image: url("https://w.namu.la/s/6b045973687f0a9a3317b0b160378fdaab6b93baf26d666887c6d8ad0fad4f02ac3c043a6c8f7c3c1128b7420ef3e48bffd4b93ceca9a15789011465b59d05fa571dd5daa6688cce69f04210c60893a57afc8a4706c9172190c7bac75f820eb725df5d61ce737107a92c42d569c1a3a5"); }
+.container .heroes .hero:nth-child(26) .image { background-image: url("https://w.namu.la/s/0ef5122eb1e4a63d8d7b50c4c98589463ce1cc1f9cfd7c981550f1182a09bfa4815b0a94d76cf03197897d263bd8801b5390707786d147b8ed3dd5c198b5fa44618f514b3def40f2bcbbf361b8c232ed63c207d37f1c976e90b7415351c23dfe50cb8510f661baa5de55c6985906184d"); }
+.container .heroes .hero:nth-child(27) .image { background-image: url("https://w.namu.la/s/cdf6830de252c7a50c502c2b0299ccfe4eb7a18e52d2fb87f2ab1b0f2077f1a03aa635d48aab418108b40c54a1a461ddc2b9d35cccce18c3e1f2f1afa2d9082e3c2df867619b8bae6365211fdd13cb0e0812ecf962538b4ea0b22158fc0ed3407843b1734cbbc7110398acfd2bdd1cd9"); }
+.container .heroes .hero:nth-child(28) .image { background-image: url("https://w.namu.la/s/01e99bb76047495a9cf4a898c214ef187e3aca3d5992ae3d1634793fb4598c75c5a97450839d5792fe3fb36c76f29e603be097526a943ce72f21f814c5703b733c162d4e9e5e75a2f1e848548e6662f82b238431d37ca2408fbcd7b243d087620aa4683dc742e26ca2a123634b6e09f1"); }
+.container .heroes .hero:nth-child(29) .image { background-image: url("https://w.namu.la/s/5339a1249d30af13b3c943aa26dc12f9fdfc1719e1e30f9581ed28e293742ea2cded273e35dd86774b212487a1eae84bf45ebaed2ee7a1307faff5baaaf3cee10c7184e4beb6d4fab7a250dce1cc3278b41d3cf999f12b195693416e589383013ecae0c754ade2144f41f54aeace973d"); }
+.container .heroes .hero:nth-child(30) .image { background-image: url("https://w.namu.la/s/43f65014d0007cc1fdd82bdba70b51e8b06a58535bbd10fd11833085276fd62f4eeacf0bd95d22a85282ced48c0401da4e89319767e2c89141d1e52dc5b750596c652acc1cd58457a41d216cc74d2918d68cf764fd123b3b0e9bb7dca89e12de66b0098655df8f3baa8284e87d83dbbe"); }
+.container .heroes .hero:nth-child(31) .image { background-image: url("https://w.namu.la/s/863ae4d3845d94ae3b029a7c6ac16e5310fe3e6c0ac7d1308cadf1b385a377b2006f8525919824df5f66faec1ac062b51c74c086abccca25a3e0617befe9b6fc8b589a80b3c180ac2284dc8b195fe0aeb0d4744894a2a40e318df404e75760600d3b943abeb2d9465dcdac82127d0130"); }
+.container .heroes .hero:nth-child(32) .image { background-image: url("https://w.namu.la/s/0d4daca8b91201511bb2431ee1ea6c9aae76ff549ddf9eefdb8e29701bee16ef1d4630e7af6959f1586ac0c237c179f112725ec07c6085f8a813ccea08e978fc1ced0aeac4069462d1e6e78c17e86141b5b543c5c0efb977eee059ecd6a5863cd597dcfeea7aa952346e46ece812ec03"); }
+.container .heroes .hero:nth-child(33) .image { background-image: url("https://w.namu.la/s/d5811a2244dccc97c52851b1e6cc3cb762f0e565b69b4e3aef45a3bbad1f67c04542d4ed528cd748f01e8556749031abba204b6dbb2608f93fa8c96befe69c6e007ffe1cf56fc7a1e74002685b7abde87dbe0b5c6ff7467f76a1a3c7712b15a990c628d3ac76f54505b14ab52073da2c"); }
+.container .heroes .hero:nth-child(34) .image { background-image: url("https://w.namu.la/s/a99dd4d50aa242fc0619b177e4c204dbfa5742e4187dbf193064fccf12a497e0d2de22eb6c6948a6d7e37c3e1f9ce9d1ff2df6dcd3715f8bacfc29559a4f0d89c6902aa465008578e5a482e1cc21f7512a45a132f95d5343c20809a1124c03994fc451afbd1d0fbff3874252d41a54e1"); }
+.container .heroes .hero:nth-child(35) .image { background-image: url("https://w.namu.la/s/e5768515c0a1a5ef7d65c50788a2e7234297fd3c726f11d6dbea94382449d7bf7d6520db1ef79f8885f6d8fc737406a47aaa38032aabe8e6607c375511d2302e468935009070f193c6082af6f14f2f121e6b917cfd0694847fc56331afb5348e223e0cbecff2b128ca8fe2cba6f5887c"); }
+
+.container .logo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container .logo img {
+    width: 100%;
+}
